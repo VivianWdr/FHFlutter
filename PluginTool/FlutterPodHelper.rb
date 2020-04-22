@@ -78,7 +78,7 @@ if !$flutter_application_path.nil?
     local_remote_plugins_file($flutter_application_path)
 else
     if $flutter_podspec_path.nil?
-        $flutter_podspec_path = "https://.../FHFlutter/raw/master"
+        $flutter_podspec_path = "https://github.com/VivianWdr/FHFlutter/raw/master"
     end
     down_remote_plugins_file($flutter_podspec_path)
 end
