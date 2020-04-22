@@ -24,10 +24,10 @@ end
 
 # 远程的plugins文件下载并解析
 def down_remote_plugins_file(podspecPath)
-    FHFlutter_path = podspecPath+'/FHFlutter.podspec'
+    fhflutter_path = podspecPath+'/FHFlutter.podspec'
     flutter_debug_path = podspecPath+'/FlutterFrame_Debug.podspec'
     flutter_release_path = podspecPath+'/FlutterFrame_Release.podspec'
-    pod 'FHFlutter', :podspec => FHFlutter_path
+    pod 'FHFlutter', :podspec => fhflutter_path
     pod 'FlutterFrame_Debug', :podspec => flutter_debug_path, :configurations => ['Debug']
     pod 'FlutterFrame_Release', :podspec => flutter_release_path, :configurations => ['Release']
 end
